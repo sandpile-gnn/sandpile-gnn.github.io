@@ -209,14 +209,16 @@ sup {
 }
 
 .affiliation-grid span {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 3px;
+  display: inline-block;
   white-space: nowrap;
 }
 
 .affiliation-grid sup {
-  margin-right: 1px;
+  position: relative;
+  top: -0.28em;
+  margin-right: 3px;
+  margin-left: 0;
+  font-size: 0.62em;
 }
 
 .notes {
