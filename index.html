@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Over-squashing as Transport Congestion">
+  <meta name="description" content="Project page for Over-squashing as Transport Congestion via an Abelian Sandpile Approach.">
+  <meta name="keywords" content="graph neural networks, over-squashing, Abelian sandpile, chip-firing, transport congestion, SSL, graph rewiring">
+  <meta name="author" content="Yang Shi, Lixian Chen, Jingchao Wang, Minzhe Guo, Mingxuan Huang, Yanhui Chen, Yifeng Xie, Xuhang Chen, Liangsi Lu">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f766e">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Sandpile GNN">
+  <meta property="og:title" content="Over-squashing as Transport Congestion via an Abelian Sandpile Approach">
+  <meta property="og:description" content="A sandpile-inspired view of over-squashing as capacity-limited transport congestion in message-passing GNNs.">
+  <meta property="og:image" content="static/images/overview.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Over-squashing as Transport Congestion">
+  <meta name="twitter:description" content="A sandpile-inspired lens for congestion, stabilization, and targeted rewiring in GNNs.">
+  <meta name="twitter:image" content="static/images/overview.png">
+
+  <meta name="citation_title" content="Over-squashing as Transport Congestion via an Abelian Sandpile Approach">
+  <meta name="citation_author" content="Shi, Yang">
+  <meta name="citation_author" content="Chen, Lixian">
+  <meta name="citation_author" content="Wang, Jingchao">
+  <meta name="citation_author" content="Guo, Minzhe">
+  <meta name="citation_author" content="Huang, Mingxuan">
+  <meta name="citation_author" content="Chen, Yanhui">
+  <meta name="citation_author" content="Xie, Yifeng">
+  <meta name="citation_author" content="Chen, Xuhang">
+  <meta name="citation_author" content="Lu, Liangsi">
+  <meta name="citation_conference_title" content="SIGKDD 2026">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="static/pdfs/paper.pdf">
+
+  <title>Over-squashing as Transport Congestion</title>
+  <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="static/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Over-squashing as Transport Congestion via an Abelian Sandpile Approach",
+    "description": "A sandpile-inspired view of over-squashing as capacity-limited transport congestion in message-passing graph neural networks.",
+    "author": [
+      {"@type": "Person", "name": "Yang Shi"},
+      {"@type": "Person", "name": "Lixian Chen"},
+      {"@type": "Person", "name": "Jingchao Wang"},
+      {"@type": "Person", "name": "Minzhe Guo"},
+      {"@type": "Person", "name": "Mingxuan Huang"},
+      {"@type": "Person", "name": "Yanhui Chen"},
+      {"@type": "Person", "name": "Yifeng Xie"},
+      {"@type": "Person", "name": "Xuhang Chen"},
+      {"@type": "Person", "name": "Liangsi Lu"}
+    ],
+    "isAccessibleForFree": true,
+    "keywords": ["graph neural networks", "over-squashing", "Abelian sandpile", "chip-firing", "long-range dependencies"],
+    "image": "static/images/overview.png"
+  }
+  </script>
+</head>
+<body>
+  <main id="main">
+    <section class="hero-section" id="top">
+      <div class="hero-inner">
+        <p class="venue-pill">SIGKDD 2026</p>
+        <h1>Over-squashing as Transport Congestion via an Abelian Sandpile Approach</h1>
+
+        <div class="authors" aria-label="Authors">
+          <span><a href="https://cnshiyang.github.io/" target="_blank" rel="noopener noreferrer">Yang Shi</a><sup>1,*</sup></span>
+          <span>Lixian Chen<sup>1,*</sup></span>
+          <span>Jingchao Wang<sup>2,*</sup></span>
+          <span>Minzhe Guo<sup>1</sup></span>
+          <span>Mingxuan Huang<sup>3</sup></span>
+          <span>Yanhui Chen<sup>1</sup></span>
+          <span>Yifeng Xie<sup>4</sup></span>
+          <span>Xuhang Chen<sup>5</sup></span>
+          <span><a href="https://luliangsi.github.io/" target="_blank" rel="noopener noreferrer">Liangsi Lu</a><sup>1,&dagger;</sup></span>
+        </div>
+
+        <div class="affiliation-grid" aria-label="Affiliations">
+          <span><sup>1</sup>Guangdong University of Technology</span>
+          <span><sup>2</sup>Peking University</span>
+          <span><sup>3</sup>Sun Yat-Sen University</span>
+          <span><sup>4</sup>Hong Kong Baptist University</span>
+          <span><sup>5</sup>Glorious Sun Group</span>
+        </div>
+        <p class="notes"><sup>*</sup>Equal contribution &middot; <sup>&dagger;</sup>Corresponding author</p>
+
+        <div class="hero-actions" aria-label="Project links">
+          <span class="button button-primary button-placeholder" role="link" aria-disabled="true">
+            <i data-lucide="code-2" aria-hidden="true"></i>
+            <span>Code</span>
+          </span>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <img src="static/images/overview.png" alt="Conceptual comparison between standard MP-GNN propagation and sandpile-inspired SSL." decoding="async">
+        <figcaption>
+          MP-GNN propagation can compress many distant signals through narrow graph regions; sandpile-inspired SSL treats overload as releasable transport congestion.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section band" id="abstract">
+      <div class="section-inner abstract-layout">
+        <div class="abstract-heading">
+          <p class="section-kicker">Abstract</p>
+          <h2>A capacity-and-cut view of long-range message passing.</h2>
+        </div>
+        <p class="abstract-text">
+          Message-passing graph neural networks (MP-GNNs) are widely used for learning on relational data. However, their performance drops on tasks requiring long-range interactions due to over-squashing, where exponential information compression overwhelms fixed-width embeddings. While existing analyses often attribute this to geometric bottlenecks under linear diffusion assumptions, thresholded nonlinearities in GNNs motivate a load-release view akin to Abelian sandpiles. Using the discrete sandpile model as a structural proxy, we show that graph bottlenecks force large stabilization cost, effectively creating zones of high transport congestion. We characterize stabilization-invariant equivalence classes induced by the reduced Laplacian and derive cut-based lower bounds linking bottlenecks to unavoidable stabilization effort. The resulting theory is discrete, whereas our implementation is a continuous vector-valued surrogate. The theory identifies the relevant design factors, namely capacity and cut size. Guided by these insights, we propose a differentiable Sandpile Stabilization Layer (SSL) and congestion-aware objectives designed to redistribute excess load and manage stabilization costs.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="idea">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Core Idea</p>
+          <h2>Over-squashing behaves like transport congestion.</h2>
+          <p>
+            The sandpile lens separates two structural levers: how much load a region can store, and how many edges let load leave that region.
+          </p>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-icon"><i data-lucide="gauge" aria-hidden="true"></i></span>
+            <h3>Capacity</h3>
+            <p>Nodes keep stable load up to a learned threshold, then release only the overload.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-icon"><i data-lucide="git-branch" aria-hidden="true"></i></span>
+            <h3>Cut Size</h3>
+            <p>Small boundaries force many sources to share few transport routes across a bottleneck.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-icon"><i data-lucide="activity" aria-hidden="true"></i></span>
+            <h3>Odometer Proxy</h3>
+            <p>Cumulative release becomes a differentiable congestion signal for regularization and rewiring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="method">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Method</p>
+          <h2>SSL stabilizes overload; rewiring expands bottlenecks.</h2>
+          <p>
+            The framework identifies narrow cuts, measures congestion with an odometer-like signal, and adds targeted cross-cut edges under a small budget.
+          </p>
+        </div>
+
+        <figure class="paper-figure">
+          <img src="static/images/framework.png" alt="Sandpile-inspired framework: bottleneck view, congestion quantities, SSL, and sandpile-guided rewiring." loading="lazy" decoding="async">
+          <figcaption>
+            The pipeline connects bottleneck structure to congestion quantities, then applies differentiable stabilization and targeted rewiring.
+          </figcaption>
+        </figure>
+
+        <div class="method-layout">
+          <div class="method-copy">
+            <h3>Cut-forced congestion</h3>
+            <p>
+              If a region receives more load than it can stably store, excess must cross its boundary. When that boundary is small, some node must repeatedly release load, producing a high congestion signal.
+            </p>
+          </div>
+          <figure class="paper-figure compact-figure">
+            <img src="static/images/bottleneck.png" alt="A graph region with many sources sending information through a small edge cut to a target." loading="lazy" decoding="async">
+            <figcaption>
+              Many sources in one region must pass through a small edge cut before reaching a target outside the region.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="scroll-top" type="button" aria-label="Scroll to top">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <footer class="site-footer">
+    <p>Over-squashing as Transport Congestion via an Abelian Sandpile Approach</p>
+  </footer>
+</body>
+</html>
