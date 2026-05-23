@@ -136,13 +136,18 @@ p {
 }
 
 h1 {
-  max-width: 1060px;
+  max-width: min(1500px, calc(100vw - 48px));
   margin: 0 auto 34px;
   color: var(--ink);
-  font-size: 3.72rem;
+  font-size: clamp(2.55rem, 3.15vw, 3.05rem);
   line-height: 1.05;
   font-weight: 850;
   letter-spacing: 0;
+}
+
+h1 span {
+  display: block;
+  white-space: nowrap;
 }
 
 h2 {
@@ -530,7 +535,7 @@ sup {
   }
 
   h1 {
-    font-size: 2.35rem;
+    font-size: 2.18rem;
   }
 
   h2 {
@@ -589,6 +594,11 @@ sup {
     max-width: 100%;
     font-size: 1.62rem;
     line-height: 1.13;
+  }
+
+  h1 span {
+    display: inline;
+    white-space: normal;
   }
 
   h2 {
