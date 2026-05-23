@@ -287,24 +287,19 @@ sup {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(220, 231, 223, 0.92);
-  border-radius: calc(var(--radius) + 2px);
-  box-shadow: var(--shadow);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .hero-figure img,
 .paper-figure img {
   width: 100%;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.hero-figure img {
-  border-color: rgba(220, 231, 223, 0.8);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -443,7 +438,7 @@ sup {
 }
 
 .paper-figure img {
-  box-shadow: 0 16px 48px rgba(27, 35, 31, 0.09);
+  box-shadow: none;
 }
 
 .method-layout {
@@ -466,7 +461,7 @@ sup {
 }
 
 .compact-figure img {
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 .compact-figure figcaption {
