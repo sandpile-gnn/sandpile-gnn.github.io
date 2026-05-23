@@ -93,9 +93,11 @@ a {
   text-align: center;
 }
 
-.project-logo {
-  width: 118px;
-  height: 118px;
+.hero-inner > .project-logo {
+  width: clamp(88px, 7vw, 118px) !important;
+  height: auto !important;
+  max-width: 118px !important;
+  max-height: 120px;
   margin: 0 auto 16px;
   object-fit: contain;
   filter: drop-shadow(0 14px 24px rgba(27, 35, 31, 0.12));
@@ -535,9 +537,9 @@ sup {
     font-size: 1.78rem;
   }
 
-  .project-logo {
-    width: 104px;
-    height: 104px;
+  .hero-inner > .project-logo {
+    width: 104px !important;
+    max-width: 104px !important;
   }
 
   .principle-grid,
@@ -593,9 +595,9 @@ sup {
     font-size: 1.45rem;
   }
 
-  .project-logo {
-    width: 88px;
-    height: 88px;
+  .hero-inner > .project-logo {
+    width: 88px !important;
+    max-width: 88px !important;
     margin-bottom: 14px;
   }
 
