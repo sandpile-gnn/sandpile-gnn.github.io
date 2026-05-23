@@ -78,14 +78,6 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
-.hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 6px;
-  background: var(--forest);
-}
-
 .hero-inner {
   width: 100%;
   max-width: var(--max);
