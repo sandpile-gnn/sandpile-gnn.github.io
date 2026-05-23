@@ -215,10 +215,12 @@ sup {
 
 .affiliation-grid sup {
   position: relative;
-  top: -0.28em;
+  top: -0.55em;
   margin-right: 3px;
   margin-left: 0;
-  font-size: 0.62em;
+  font-size: 0.58em;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
 .notes {
@@ -279,18 +281,6 @@ sup {
   color: #fff;
   background: var(--teal-dark);
   border-color: var(--teal-dark);
-}
-
-.button-placeholder {
-  cursor: default;
-}
-
-.button-placeholder:hover {
-  transform: none;
-  color: #fff;
-  background: var(--teal);
-  border-color: var(--teal);
-  box-shadow: 0 1px 0 rgba(27, 35, 31, 0.04);
 }
 
 .hero-figure {
