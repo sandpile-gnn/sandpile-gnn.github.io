@@ -93,6 +93,14 @@ a {
   text-align: center;
 }
 
+.project-logo {
+  width: 118px;
+  height: 118px;
+  margin: 0 auto 16px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px rgba(27, 35, 31, 0.12));
+}
+
 .venue-pill,
 .section-kicker {
   margin: 0 0 12px;
@@ -527,6 +535,11 @@ sup {
     font-size: 1.78rem;
   }
 
+  .project-logo {
+    width: 104px;
+    height: 104px;
+  }
+
   .principle-grid,
   .method-layout,
   .abstract-layout {
@@ -578,6 +591,12 @@ sup {
 
   h2 {
     font-size: 1.45rem;
+  }
+
+  .project-logo {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 14px;
   }
 
   .authors {
